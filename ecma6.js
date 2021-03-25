@@ -37,3 +37,22 @@ const padZeros = (num, totalLen) => {
 console.log(padZeros(3,5));
 
 
+/*function power(base, exponent) { 
+   var result=1; 
+   for (var i=0; i < exponent; i++) { 
+         result *=base; 
+   } 
+   return result;
+} */
+
+
+const power = (base, exponent) => {
+    let result = 1;
+    for (let i = 0; i < exponent; i++) { 
+       result *= base; 
+    }
+     
+   return result;
+}
+ 
+console.log(power(10,3));
