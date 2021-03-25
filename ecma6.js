@@ -115,3 +115,22 @@ const reversedStr = ([...str]) => str.reverse().join('');
 console.log(reversedStr('Moon'));
 
 
+// EXERCISE 5
+
+/*Replace the next code block with async/await:*/
+
+
+function b() {
+    // ...
+}
+ 
+async function a() {
+    // Ens esperem que la funció b acabi
+    const result = await b();   
+    doMoreWork(result);
+ 
+}
+
+
+
+ 
