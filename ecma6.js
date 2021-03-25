@@ -51,8 +51,20 @@ const power = (base, exponent) => {
     for (let i = 0; i < exponent; i++) { 
        result *= base; 
     }
-     
+
    return result;
 }
  
 console.log(power(10,3));
+
+
+/* function greet(who) {
+    console.log("Hello " + who);
+} */
+
+const greet = (who = "person") => `Hello ${who}.`;
+
+console.log(greet('Minerva'));
+
+
+
