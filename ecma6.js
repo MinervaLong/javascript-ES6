@@ -88,3 +88,20 @@ console.log(usersArray);
 
 
 
+// EXERCISE 3
+
+/* Show the next Array as a complete string using .reduce()
+
+var epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
+
+Result: 'a long time ago in a galaxy far far away'
+
+*/
+
+let epic = ['a', 'long', 'time', 'ago', 'in a', 'galaxy', 'far far', 'away'];
+
+const galaxy = epic.reduce((swString, word) => swString += word + ' ');
+
+console.log(galaxy);
+
+
