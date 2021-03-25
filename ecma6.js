@@ -153,13 +153,24 @@ var tasks = [
     }
 ];
     
-    // WITH MAP
+// WITH MAP
     
 const mapArray = tasks.map( (task) =>  {
     return task.name; 
 });
     
 console.log(mapArray);
+
+// WITH FORAECH
+
+const forEachArray = [];
+
+tasks.forEach(function(task) {
+   forEachArray.push(task.name);
+});
+
+console.log(forEachArray);
+
 
 
  
