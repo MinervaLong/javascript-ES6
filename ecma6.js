@@ -105,3 +105,13 @@ const galaxy = epic.reduce((swString, word) => swString += word + ' ');
 console.log(galaxy);
 
 
+// EXERCISE 4
+
+/* Create a function that receives a string and return it reversed using arrow functions,
+spread operator and reverse() method */
+
+const reversedStr = ([...str]) => str.reverse().join('');
+
+console.log(reversedStr('Moon'));
+
+
