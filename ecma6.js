@@ -132,5 +132,34 @@ async function a() {
 }
 
 
+// EXERCISE 6
+
+/*We want an Array only with tasks names
+- Use .forEach() to obtain this array.
+- Use .map() to obtain this array. */
+
+var tasks = [
+    {
+       'name' : 'Start React web',
+       'duration' : 120
+    },
+    {
+       'name' : 'Work out',
+       'duration' : 60
+    },
+    {
+       'name' : 'Procrastinate on facebook',
+       'duration' : 240
+    }
+];
+    
+    // WITH MAP
+    
+const mapArray = tasks.map( (task) =>  {
+    return task.name; 
+});
+    
+console.log(mapArray);
+
 
  
