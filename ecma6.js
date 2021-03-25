@@ -172,5 +172,29 @@ tasks.forEach(function(task) {
 console.log(forEachArray);
 
 
+// ----------------------------LEVEL 2---------------------------------
+
+// Exercise 7
+
+const multTable = () => {
+   let number1;
+   let number2;
+   let i;
+
+   do {
+      number1 = parseInt(prompt('Número 1: '));
+   }while(number1 < 1 || number1 > 10)
+
+   do {
+      number2 = parseInt(prompt('Número 2: '));
+   } while(number2 < 1 || number2 > 10)   
+   
+   for(i = 1; i <= number2; i++){
+      console.log(number1 + " x " + i + " = " +  i * number1);
+   }
+}
+
+console.log(multTable());
+
 
  
