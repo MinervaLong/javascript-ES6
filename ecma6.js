@@ -67,4 +67,24 @@ const greet = (who = "person") => `Hello ${who}.`;
 console.log(greet('Minerva'));
 
 
+// EXERCISE 2 | Mend the error in this code:
+
+/* users.map(function (user) {
+   user.firstName;
+});*/
+
+let users = 
+[{ firstName: 'Homer', lastName: 'Simpson' },
+{ firstName: 'Marge', lastName: 'Simpson' },
+{ firstName: 'Bart', lastName: 'Simpson' },
+{ firstName: 'Lisa', lastName: 'Simpson' },
+{ firstName: 'Maggie', lastName: 'Simpson' }];
+
+const usersArray = users.map( (user) =>  {
+   return user.firstName; 
+});
+
+console.log(usersArray);
+
+
 
