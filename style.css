@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;
+}
+
+.header {
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #F0F0F0;
+    padding: 20px 40px;
+}
+
+.header h2 {
+    margin: 0;
+    color: rgb(31, 62, 70);
+}
+
+.form {
+    padding:30px 40px;
+}
+
+.wrapper {
+    margin-bottom: 10px;
+    padding-bottom:20px; /* This is for the space of the hidden error messages*/
+    position: relative; /* Relative because we are going to put absoulute elements inside it*/
+}
+
+.wrapper label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.wrapper input {
+    border: 2px solid #F0F0F0;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.form button {
+    background-color: rgb(31, 62, 70);
+    border: 2px solid rgb(31, 62, 70);
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.table {
+    padding: 0 1rem 2rem 7rem;    
+}
+
+.tableRows {
+    color: rgb(31, 62, 70);
+    font-weight: 600;    
+}
+
+.tableRows td {
+    border: 1px solid dimgrey;
+    padding: 0.5rem;
+}
