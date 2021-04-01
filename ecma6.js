@@ -329,4 +329,26 @@ secondNumber.addEventListener('change', number2Verify);
 document.getElementById('form').addEventListener('submit', function(e) {
    e.preventDefault();
 });
+
+// ----------------------------LEVEL 3---------------------------------
+
+// EXERCISE 9
+
+function filterNames() {
+   // Declare variables
+   let input = document.getElementById('myInput');
+   let allUpper = input.value.toUpperCase();// Al in uppercase to evaluate
+   let ul = document.getElementById("myUL");
+   let li = ul.getElementsByTagName('li');
  
+   // Loop through all list items, and hide those who don't match the search query  
+   for (let word of li) {
+      let list = word.getElementsByTagName('a')[0]; // Catch the list of links
+      let name = list.textContent || list.innerText; // Catch the names in the links
+     if (name.toUpperCase().indexOf(allUpper) > -1) { 
+        word.style.display = "";
+     } else {
+        word.style.display = "none";
+     }
+   }
+ }
