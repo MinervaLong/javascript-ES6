@@ -81,3 +81,45 @@ body {
     border: 1px solid dimgrey;
     padding: 0.5rem;
 }
+
+/* ----------------------------LEVEL 3---------------------------- */
+
+.bg {
+    background-image: url('./bg_level3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#myInput {  
+  width: 100%; 
+  font-size: 16px; 
+  padding: 12px 20px 12px 40px; 
+  border: 2px solid #29086B; 
+  margin-bottom: 12px; 
+  border-radius: 5px;
+  box-shadow: 3px 1px 66px 6px rgba(0, 0, 0, 0.44);
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 3px 1px 66px 6px rgba(0, 0, 0, 0.44);
+}
+
+#myUL li a {
+  border: 2px solid #29086B;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #A79CD6; 
+  padding: 12px; 
+  text-decoration: none; 
+  font-size: 18px; 
+  font-weight: 500;
+  color: black; 
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #E03D63; /* Add a hover effect to all links, except for headers */
+}
